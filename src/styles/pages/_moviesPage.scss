@@ -1,0 +1,12 @@
+.movies__page {
+  &__tools {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    display: flex;
+    padding: 0 1rem;
+    flex-direction: column;
+  }
+}

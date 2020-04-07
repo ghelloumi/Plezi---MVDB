@@ -1,0 +1,51 @@
+.app__header {
+  background: #fbfbfb;
+  font-weight: 600;
+  overflow: hidden;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: 100vw;
+  top: 0;
+  box-shadow: 0 0 1rem #c3c3c3;
+  height: 3rem;
+
+  > span {
+    color: #F44336;
+    margin-left: 5rem;
+    line-height: 1rem;
+
+    > span {
+      color: #484848;
+      margin-left: 2rem;
+    }
+  }
+
+  > img {
+    height: 6rem;
+    position: absolute;
+    opacity: 0.6;
+    left: -1.4rem;
+    transform: rotate(-10deg);
+  }
+
+  > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    > li {
+      background: #e2e2e2;
+      padding: 0.3rem 0rem;
+      border-radius: 1rem;
+      margin: 0 0.5rem;
+      margin-top: 0.1rem;
+      width: 9rem;
+
+      > a {
+        text-decoration: none;
+        color: #607D8B;
+      }
+    }
+  }
+}

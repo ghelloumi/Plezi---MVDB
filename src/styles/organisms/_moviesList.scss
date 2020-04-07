@@ -1,0 +1,39 @@
+.movies__list {
+  margin-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  top: 6rem;
+  align-items: center;
+  justify-content: center;
+
+  &.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.error {
+    color: #f33030;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  &__loadMore {
+
+    > button {
+      background: white;
+      box-shadow: 0 0 2rem #c7c7c7;
+      border: 0;
+      height: 3.5rem;
+      margin: 2rem 0;
+      width: 70%;
+      font-family: 'Baloo Thambi 2', cursive;
+      font-weight: 600;
+      font-size: 1.2rem;
+      border-radius: 0.6rem;
+      cursor: pointer;
+      color: #505050;
+      outline: none;
+    }
+  }
+}

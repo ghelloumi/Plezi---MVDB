@@ -1,0 +1,51 @@
+.movie__card {
+  margin: 1rem;
+  width: 14rem;
+  height: 26rem;
+  background: white;
+  box-shadow: 0.5rem 0rem 1rem #bfbfbf;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0.5rem 0 2rem #525252;
+  }
+
+  > img {
+    width: 14rem;
+    height: 20rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > span {
+      > img {
+        height: 0.8rem;
+      }
+
+      &:first-child{
+        background: #e0e0e0;
+        width: 3rem;
+        border-radius: 1rem;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: #969696;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      &:nth-child(2) {
+        font-weight: 600;
+      }
+
+      &:last-child {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

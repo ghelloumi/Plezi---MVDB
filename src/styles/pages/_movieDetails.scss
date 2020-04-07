@@ -1,0 +1,65 @@
+.movie__details {
+  display: flex;
+  margin-top: 1rem;
+
+  &__main {
+    width: 40%;
+
+    > .poster {
+      > a > img {
+        width: 6rem;
+      }
+    }
+
+    > .main__details {
+      display: flex;
+      flex-direction: column;
+
+
+      > div > img {
+        margin: 0.2rem;
+        width: 2rem;
+        height: 1.3rem
+      }
+    }
+  }
+
+  &__content {
+    width: 60%;
+    text-align: justify;
+    padding: 0 1rem;
+
+    > div {
+      > h5 {
+        margin: 0;
+      }
+
+      > p {
+        font-size: 0.7rem;
+        margin-top: 0.2rem;
+      }
+
+      > div {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        > img {
+          height: 1rem;
+          margin: 0.5rem;
+        }
+      }
+
+      &.imdb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+
+        > a > img {
+          height: 2.5rem;
+        }
+      }
+    }
+  }
+}
