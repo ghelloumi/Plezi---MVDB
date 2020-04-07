@@ -6,6 +6,7 @@ import Image from "../atoms/Image";
 import {ALTS, IMAGES, TEXTS} from "../../utils/contants";
 import {formatFlagLink, formatImageLink, formatIMDBLink} from "../../utils/functions";
 import {transformations} from "../../config/api.config";
+import PropTypes from "prop-types";
 
 const MovieDetails = ({movieId}) => {
     const {pending, movieDetailsRes, error} = useSelector(state => state.movieDetailsData);
@@ -81,6 +82,10 @@ const MovieDetails = ({movieId}) => {
             }
         </div>
     );
+}
+
+MovieDetails.propTypes = {
+    movieId: PropTypes.number
 }
 
 export default MovieDetails;

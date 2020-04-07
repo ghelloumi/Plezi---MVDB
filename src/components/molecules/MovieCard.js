@@ -5,6 +5,7 @@ import Modal from "../atoms/Modal";
 import MovieDetails from "../organisms/MovieDetails";
 import {formatImageLink} from "../../utils/functions";
 import {transformations} from "../../config/api.config";
+import PropTypes from "prop-types";
 
 const MovieCard = ({movie}) => {
     const [modal, setModal] = useState(false)
@@ -26,6 +27,10 @@ const MovieCard = ({movie}) => {
             </Modal>}
         </div>
     );
+}
+
+MovieCard.propTypes = {
+    movie: PropTypes.object.isRequired
 }
 
 export default MovieCard;

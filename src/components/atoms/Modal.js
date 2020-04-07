@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import Image from "./Image";
 import {ALTS, IMAGES} from "../../utils/contants";
+import PropTypes from "prop-types";
 
 const Modal = ({children, close}) => {
     const modalContainer = useRef(null)
@@ -36,5 +37,10 @@ const Modal = ({children, close}) => {
         </div>
     );
 }
+
+Modal.propTypes = {
+    children:  PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
+    close: PropTypes.func.isRequired
+};
 
 export default Modal;
